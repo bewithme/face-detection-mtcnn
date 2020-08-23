@@ -21,4 +21,8 @@
 
 # Todo:
  1. improve performance by using GPU
+ 
+# Feedback 
+
+ if you need help pls contact me with wechat: italybaby
 
