@@ -16,7 +16,10 @@
  
  2. import code as maven project.
  
- 3. run App , you will see face_0.jpg face_1.jpg in your project data folder
+ 3. run App , It will take my_twins.jpeg as input and you will see output images face_0.jpg face_1.jpg in your project data folder
+ 
+  input: ![image](https://github.com/bewithme/face-detection-mtcnn/blob/master/data/my_twins.jpeg)
+  ouput: ![image](https://github.com/bewithme/face-detection-mtcnn/blob/master/data/0.jpg) ![image](https://github.com/bewithme/face-detection-mtcnn/blob/master/data/1.jpg)
 
 # Todo:
  1. improve performance by using GPU
