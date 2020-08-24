@@ -60,8 +60,9 @@ public class NetWork {
 						maxNum = pbox.pdata.get(ptempCount);
 						for (int kernelRow = 0; kernelRow < kernelSize; kernelRow++) {
 							for (int i = 0; i < kernelSize; i++) {
-								if (maxNum < pbox.pdata.get(ptempCount + i + kernelRow * pbox.width)) {
-									maxNum = pbox.pdata.get(ptempCount + i + kernelRow * pbox.width);
+								int maxNumIndex=ptempCount + i + kernelRow * pbox.width;
+								if (maxNum < pbox.pdata.get(maxNumIndex)) {
+									maxNum = pbox.pdata.get(maxNumIndex);
 								}
 							}
 						}
@@ -86,8 +87,15 @@ public class NetWork {
 							for (int i = 0; i < kernelSize; i++) {
 								if ((i + diffw) > 0)
 									break;
-								if (maxNum < pbox.pdata.get(ptempCount + i + kernelRow * pbox.width)) {
-									maxNum = pbox.pdata.get(ptempCount + i + kernelRow * pbox.width);
+								
+								int maxNumIndex=ptempCount + i + kernelRow * pbox.width;
+								
+								if(maxNumIndex==pbox.pdata.size()) {
+									maxNumIndex=maxNumIndex-1;
+								}
+								
+								if (maxNum < pbox.pdata.get(maxNumIndex)) {
+									maxNum = pbox.pdata.get(maxNumIndex);
 								}
 							}
 						}
