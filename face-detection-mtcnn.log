@@ -1,0 +1,160 @@
+[2020-08-24 10:49:57]Loaded [CpuBackend] backend
+[2020-08-24 10:49:58]Number of threads used for linear algebra: 1
+[2020-08-24 10:49:58]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 10:49:58]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 10:49:58]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 10:49:58]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 10:49:58]*************************************************************************************************
+[2020-08-24 10:49:58]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 10:49:58]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 10:49:58]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 10:49:58]Blas vendor: [OPENBLAS]
+[2020-08-24 11:19:30]Loaded [CpuBackend] backend
+[2020-08-24 11:19:31]Number of threads used for linear algebra: 1
+[2020-08-24 11:19:31]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 11:19:31]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 11:19:31]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 11:19:31]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 11:19:31]*************************************************************************************************
+[2020-08-24 11:19:31]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 11:19:31]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 11:19:31]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 11:19:31]Blas vendor: [OPENBLAS]
+[2020-08-24 13:03:06]Loaded [CpuBackend] backend
+[2020-08-24 13:03:07]Number of threads used for linear algebra: 1
+[2020-08-24 13:03:07]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 13:03:07]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 13:03:07]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 13:03:07]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 13:03:07]*************************************************************************************************
+[2020-08-24 13:03:08]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 13:03:08]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 13:03:08]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 13:03:08]Blas vendor: [OPENBLAS]
+[2020-08-24 13:03:12]save face data/face_0.jpg end
+[2020-08-24 13:07:16]Loaded [CpuBackend] backend
+[2020-08-24 13:07:17]Number of threads used for linear algebra: 1
+[2020-08-24 13:07:17]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 13:07:17]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 13:07:17]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 13:07:17]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 13:07:17]*************************************************************************************************
+[2020-08-24 13:07:17]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 13:07:18]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 13:07:18]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 13:07:18]Blas vendor: [OPENBLAS]
+[2020-08-24 13:07:23]save face data/face_0.jpg end
+[2020-08-24 13:16:05]Loaded [CpuBackend] backend
+[2020-08-24 13:16:06]Number of threads used for linear algebra: 1
+[2020-08-24 13:16:06]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 13:16:06]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 13:16:06]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 13:16:06]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 13:16:06]*************************************************************************************************
+[2020-08-24 13:16:06]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 13:16:06]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 13:16:06]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 13:16:06]Blas vendor: [OPENBLAS]
+[2020-08-24 13:16:11]save face data/face_0.jpg end
+[2020-08-24 13:22:43]Loaded [CpuBackend] backend
+[2020-08-24 13:22:44]Number of threads used for linear algebra: 1
+[2020-08-24 13:22:44]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 13:22:44]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 13:22:44]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 13:22:44]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 13:22:44]*************************************************************************************************
+[2020-08-24 13:22:44]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 13:22:44]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 13:22:44]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 13:22:44]Blas vendor: [OPENBLAS]
+[2020-08-24 13:22:49]save face data/face_0.jpg end
+[2020-08-24 13:37:58]Loaded [CpuBackend] backend
+[2020-08-24 13:37:59]Number of threads used for linear algebra: 1
+[2020-08-24 13:37:59]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 13:37:59]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 13:37:59]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 13:37:59]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 13:37:59]*************************************************************************************************
+[2020-08-24 13:37:59]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 13:37:59]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 13:37:59]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 13:37:59]Blas vendor: [OPENBLAS]
+[2020-08-24 13:44:17]Loaded [CpuBackend] backend
+[2020-08-24 13:44:18]Number of threads used for linear algebra: 1
+[2020-08-24 13:44:18]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 13:44:18]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 13:44:18]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 13:44:18]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 13:44:18]*************************************************************************************************
+[2020-08-24 13:44:18]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 13:44:18]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 13:44:18]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 13:44:18]Blas vendor: [OPENBLAS]
+[2020-08-24 15:33:23]Loaded [CpuBackend] backend
+[2020-08-24 15:33:24]Number of threads used for linear algebra: 1
+[2020-08-24 15:33:24]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 15:33:24]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 15:33:24]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 15:33:24]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 15:33:24]*************************************************************************************************
+[2020-08-24 15:33:24]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 15:33:25]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 15:33:25]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 15:33:25]Blas vendor: [OPENBLAS]
+[2020-08-24 15:36:06]Loaded [CpuBackend] backend
+[2020-08-24 15:36:07]Number of threads used for linear algebra: 1
+[2020-08-24 15:36:07]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 15:36:07]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 15:36:07]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 15:36:07]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 15:36:07]*************************************************************************************************
+[2020-08-24 15:36:08]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 15:36:08]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 15:36:08]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 15:36:08]Blas vendor: [OPENBLAS]
+[2020-08-24 15:38:01]Loaded [CpuBackend] backend
+[2020-08-24 15:38:03]Number of threads used for linear algebra: 1
+[2020-08-24 15:38:03]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 15:38:03]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 15:38:03]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 15:38:03]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 15:38:03]*************************************************************************************************
+[2020-08-24 15:38:03]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 15:38:03]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 15:38:03]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 15:38:03]Blas vendor: [OPENBLAS]
+[2020-08-24 15:41:33]Loaded [CpuBackend] backend
+[2020-08-24 15:41:34]Number of threads used for linear algebra: 1
+[2020-08-24 15:41:34]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 15:41:34]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 15:41:34]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 15:41:34]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 15:41:34]*************************************************************************************************
+[2020-08-24 15:41:34]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 15:41:35]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 15:41:35]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 15:41:35]Blas vendor: [OPENBLAS]
+[2020-08-24 15:44:41]Loaded [CpuBackend] backend
+[2020-08-24 15:44:42]Number of threads used for linear algebra: 1
+[2020-08-24 15:44:42]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 15:44:42]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 15:44:42]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 15:44:42]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 15:44:42]*************************************************************************************************
+[2020-08-24 15:44:42]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 15:44:43]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 15:44:43]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 15:44:43]Blas vendor: [OPENBLAS]
+[2020-08-24 15:44:50]save face data/face_0.jpg end
+[2020-08-24 15:49:53]Loaded [CpuBackend] backend
+[2020-08-24 15:49:55]Number of threads used for linear algebra: 1
+[2020-08-24 15:49:55]*********************************** CPU Feature Check Warning ***********************************
+[2020-08-24 15:49:55]Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+[2020-08-24 15:49:55]Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+[2020-08-24 15:49:55]Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+[2020-08-24 15:49:55]*************************************************************************************************
+[2020-08-24 15:49:55]Number of threads used for OpenMP BLAS: 6
+[2020-08-24 15:49:56]Backend used: [CPU]; OS: [Mac OS X]
+[2020-08-24 15:49:56]Cores: [12]; Memory: [3.6GB];
+[2020-08-24 15:49:56]Blas vendor: [OPENBLAS]
+[2020-08-24 15:50:03]save face data/face_0.jpg end

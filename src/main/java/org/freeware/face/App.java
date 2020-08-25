@@ -32,7 +32,7 @@ public class App{
 			//ArrayList<FaceInfo> list=mtcnnDetector.findFace("data/1.jpg");
 			
 			
-			ArrayList<BufferedImage> faceImageist=mtcnnDetector.findFacesImage("data/my_twins.jpeg");
+			ArrayList<BufferedImage> faceImageist=mtcnnDetector.findFacesImage("data/0019_01.jpg");
 			
 			int i=0;
 			

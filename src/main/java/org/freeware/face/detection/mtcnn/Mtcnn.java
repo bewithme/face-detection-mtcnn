@@ -52,8 +52,11 @@ public class Mtcnn {
 		ArrayList<FaceInfo> faces = new ArrayList<FaceInfo>();
 
 		int count = 0;
+		
 		for (int i = 0; i < scales_.size(); i++) {
+			
 			int changedH = (int) Math.ceil(image.rows() * scales_.get(i));
+			
 			int changedW = (int) Math.ceil(image.cols() * scales_.get(i));
 			
 			opencv_imgproc.resize(image, reImage, new Size(changedW, changedH));

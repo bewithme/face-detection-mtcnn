@@ -17,6 +17,7 @@ import org.bytedeco.opencv.opencv_core.CvPoint;
 import org.bytedeco.opencv.opencv_core.CvScalar;
 import org.bytedeco.opencv.opencv_core.IplImage;
 import org.bytedeco.opencv.opencv_core.Mat;
+import org.bytedeco.opencv.opencv_core.Size;
 
 
 
@@ -98,7 +99,8 @@ public class MtcnnDetector  {
 		 Frame middleFrame=toIplImageconverter.convert(iplImage);
 		  
 		 Mat image=toMatConverter.convertToMat(middleFrame);
-			 
+		 
+
 		 Mtcnn mtcnn = new Mtcnn(image.rows(), image.cols());
 		
 		 ArrayList<FaceInfo> faces = mtcnn.findFace(image);
@@ -140,7 +142,20 @@ public class MtcnnDetector  {
 		
     	 ArrayList<FaceInfo>  faceInfoList=findFaces(image);
     	 
-    	 ArrayList<BufferedImage> imageList=new ArrayList<BufferedImage>();
+    	 ArrayList<BufferedImage> imageList = findFaceImages(image, faceInfoList);
+		
+       	return imageList;
+	}
+
+    /**
+     * Find all faces and return all faces images
+     * @param image
+     * @param faceInfoList
+     * @return
+     */
+    public ArrayList<BufferedImage> findFaceImages(BufferedImage image, ArrayList<FaceInfo> faceInfoList) {
+		
+		 ArrayList<BufferedImage> imageList=new ArrayList<BufferedImage>();
     	 
     	 for(FaceInfo faceInfo:faceInfoList) {
     		 
@@ -152,8 +167,8 @@ public class MtcnnDetector  {
     		 
     		 imageList.add(faceImage);
     	 }
-		
-       	return imageList;
+    	 
+		return imageList;
 	}
 	
 	
