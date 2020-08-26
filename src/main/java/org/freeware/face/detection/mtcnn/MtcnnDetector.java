@@ -23,11 +23,12 @@ import org.bytedeco.opencv.opencv_core.Mat;
 
 /**
  * 
+ * None tensorflow implements
  * 
  * @author wenfengxu
  *
  */
-public class MtcnnDetector  {
+public class MtcnnDetector  implements Detector {
 	
 	
 	/**
@@ -37,7 +38,7 @@ public class MtcnnDetector  {
 	 * @param inputImage
 	 * @param ouputImage
 	 */
-	public  void detectFaces(String inputImage,String ouputImage) {
+	public  void detectFaces(String inputImage,String ouputImage)throws Exception {
 		
 	     IplImage iplImage=opencv_imgcodecs.cvLoadImage(inputImage);
 	     
@@ -100,7 +101,6 @@ public class MtcnnDetector  {
 		  
 		 Mat image=toMatConverter.convertToMat(middleFrame);
 		 
-
 		 Mtcnn mtcnn = new Mtcnn(image.rows(), image.cols());
 		
 		 ArrayList<FaceInfo> faces = mtcnn.findFace(image);
@@ -243,11 +243,13 @@ public class MtcnnDetector  {
 		 
 		 List<Float> keyPoints=face.getKeyPoints();
 		 
-		 for (int num = 0; num < 5; num++) {
+		 int keyPointsQty=5;
+		 
+		 for (int num = 0; num < keyPointsQty; num++) {
 			 
 			  int x=keyPoints.get(num).intValue();
 			  
-			  int y=keyPoints.get(num + 5).intValue();
+			  int y=keyPoints.get(num + keyPointsQty).intValue();
 			  
 			  CvPoint center=new CvPoint();
 			  
