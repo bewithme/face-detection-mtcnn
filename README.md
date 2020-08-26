@@ -1,8 +1,8 @@
 # Java face detection use mtcnn
 
- This project is java face detection wrapper of with  https://github.com/samylee/Mtcnn_Java  and https://github.com/williamardianto/mtcnn-dl4j 
+ This project is java face detection wrapper of https://github.com/samylee/Mtcnn_Java  and https://github.com/williamardianto/mtcnn-dl4j 
 
- Thanks to  samyllee and williamardianto .
+ Thanks to samyllee and williamardianto .
 
 # Improvement:
 
