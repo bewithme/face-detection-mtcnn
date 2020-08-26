@@ -8,7 +8,7 @@
 
  1. replace opencv with javacv, so you don't need to install opencv manually on your computer.
  
- 2. add Detector as entrance, you can use TensorflowMtcnnDetector or MtcnnDetector as implemtent,TensorflowMtcnnDetector is recommanded 
+ 2. add Detector as entrance, you can use TensorflowMtcnnDetector or MtcnnDetector(pure java) as implemtent,TensorflowMtcnnDetector is recommanded 
  
  3. add more useful and convenient method.
  
