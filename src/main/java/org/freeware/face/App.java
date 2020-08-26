@@ -2,14 +2,11 @@ package org.freeware.face;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
 import org.freeware.face.detection.mtcnn.Detector;
-import org.freeware.face.detection.mtcnn.FaceInfo;
-import org.freeware.face.detection.mtcnn.MtcnnDetector;
 import org.freeware.face.detection.mtcnn.tf.TensorflowMtcnnDetector;
 
 import lombok.extern.slf4j.Slf4j;
