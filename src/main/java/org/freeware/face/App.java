@@ -7,8 +7,10 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+import org.freeware.face.detection.mtcnn.Detector;
 import org.freeware.face.detection.mtcnn.FaceInfo;
 import org.freeware.face.detection.mtcnn.MtcnnDetector;
+import org.freeware.face.detection.mtcnn.tf.TensorflowMtcnnDetector;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -26,13 +28,15 @@ public class App{
 	public static void main( String[] args ){
        
 		
-		MtcnnDetector mtcnnDetector=new MtcnnDetector();
+		//Detector detector=new MtcnnDetector();
+		
+		Detector detector=new TensorflowMtcnnDetector();
 
 		try {
-			//ArrayList<FaceInfo> list=mtcnnDetector.findFace("data/1.jpg");
 			
+			detector.detectFacesAndKeyPoints("data/my_twins.jpeg", "data/my_twins_out.jpg");
 			
-			ArrayList<BufferedImage> faceImageist=mtcnnDetector.findFacesImage("data/0019_01.jpg");
+			ArrayList<BufferedImage> faceImageist=detector.findFacesImage("data/my_twins.jpeg");
 			
 			int i=0;
 			
@@ -47,7 +51,7 @@ public class App{
 			}
 			
 			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			log.error("", e);
 		}
 		
