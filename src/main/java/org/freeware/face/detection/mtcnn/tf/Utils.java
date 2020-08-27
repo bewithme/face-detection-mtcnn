@@ -199,11 +199,14 @@ public class Utils {
         }
 
         tmp = Nd4j.where(y.match(1, Conditions.lessThan(1)), null, null)[0];
+        
         if (tmp.length() != 0) {
-            INDArray tmp2 = Nd4j.expandDims(tmp, 0);
-            INDArray b = y.get(tmp2).rsub(2);
+            //INDArray tmp2 = Nd4j.expandDims(tmp, 0);
+            
+            INDArray b = y.get(tmp).rsub(2);
 
             dy.put(new INDArrayIndex[]{indices(tmp.toLongVector())}, b);
+            
             y = y.put(new INDArrayIndex[]{indices(tmp.toLongVector())}, Nd4j.ones(tmp.length()));
         }
 
