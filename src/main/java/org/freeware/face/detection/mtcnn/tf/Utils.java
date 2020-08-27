@@ -201,7 +201,8 @@ public class Utils {
         tmp = Nd4j.where(y.match(1, Conditions.lessThan(1)), null, null)[0];
         
         if (tmp.length() != 0) {
-            //INDArray tmp2 = Nd4j.expandDims(tmp, 0);
+        	
+            //INDArray tmp2 = Nd4j.expandDims(tmp, 0);//this code will course error
             
             INDArray b = y.get(tmp).rsub(2);
 
