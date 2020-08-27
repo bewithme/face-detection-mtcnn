@@ -64,7 +64,7 @@ public class TensorflowMtcnnDetector implements Detector {
 	public void detectFacesAndKeyPoints(String inputImage, String ouputImage) throws Exception {
 	    
 		Mat image = imread(inputImage);
-
+		
         FaceAnnotation[] faceAnnotations = mtcnn.detectFace(image);
         
         List<Mat> alignedFace = new ArrayList<>();
