@@ -28,7 +28,9 @@ import org.nd4j.linalg.indexing.conditions.Conditions;
 import org.nd4j.tensorflow.conversion.graphrunner.GraphRunner;
 import org.tensorflow.framework.ConfigProto;
 
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class MTCNN {
     private static final int minFaceSize = 20;
     private static final double scaleFactor = 0.709;
@@ -64,7 +66,7 @@ public class MTCNN {
     }
 
     FaceAnnotation[] detectFace(Mat image) throws Exception {
-    	
+    	long startTime=System.currentTimeMillis();
         double m = 12D / minFaceSize;
         
         double minLayer = Math.min(image.rows(), image.cols()) * m;
@@ -82,12 +84,17 @@ public class MTCNN {
         INDArray points = stageThreeResult[1];
 
         FaceAnnotation[] faceAnnotation = toFaceAnnotation(totalBoxes, points);
+       
+        long endTime=System.currentTimeMillis();
+        
+        log.info("detectFace:"+(endTime-startTime)+" ms");
 
         return faceAnnotation;
     }
 
     @SuppressWarnings("resource")
 	Object[] stage1(Mat image, List<Double> scales) throws IOException {
+    	long startTime=System.currentTimeMillis();
     	
         INDArray totalBoxes = Nd4j.empty();
 
@@ -150,10 +157,16 @@ public class MTCNN {
             totalBoxes = Utils.rerec(totalBoxes.dup());
 
         }
+        
+        long endTime=System.currentTimeMillis();
+        
+        log.info("stage1:"+(endTime-startTime)+" ms");
         return new Object[]{totalBoxes, Utils.pad(totalBoxes, image.cols(), image.rows())};
     }
 
     Object[] stage2(Mat image, INDArray totalBoxes, StageState stageState) throws IOException {
+    	
+    	long startTime=System.currentTimeMillis();
         int numBoxes = totalBoxes.isEmpty() ? 0 : (int) totalBoxes.shape()[0];
 
         if (numBoxes == 0) {
@@ -196,11 +209,18 @@ public class MTCNN {
         }
 
         stageState = Utils.pad(totalBoxes, image.cols(), image.rows());
+        
+        long endTime=System.currentTimeMillis();
+        
+        log.info("stage2:"+(endTime-startTime)+" ms");
 
         return new Object[]{totalBoxes, stageState};
     }
 
     INDArray[] stage3(Mat image, INDArray totalBoxes, StageState stageState) throws IOException {
+    	
+    	long startTime=System.currentTimeMillis();
+    	
         int numBoxes = totalBoxes.isEmpty() ? 0 : (int) totalBoxes.shape()[0];
 
         if (numBoxes == 0) {
@@ -208,6 +228,7 @@ public class MTCNN {
         }
 
         INDArray img = loader.asMatrix(image);
+        
         img = img.get(point(0), all(), all(), all()).permute(1, 2, 0);
 
         INDArray tempImg1 = computeTempImage(img, numBoxes, stageState, 48);
@@ -260,11 +281,15 @@ public class MTCNN {
 
             points = points.get(all(), indices(pick.toLongVector())).transpose();
         }
-
+        long endTime=System.currentTimeMillis();
+        
+        log.info("stage3:"+(endTime-startTime)+" ms");
         return new INDArray[]{totalBoxes, points};
     }
 
     INDArray computeTempImage(INDArray image, int numBoxes, StageState stageState, int size) throws IOException {
+    	
+    	long startTime=System.currentTimeMillis();
 
         INDArray tempImg = Nd4j.zeros(size, size, 3, numBoxes);
 
@@ -296,20 +321,31 @@ public class MTCNN {
         tempImg = tempImg.subi(127.5).muli(0.0078125);
 
         INDArray tempImg1 = tempImg.permutei(3, 1, 0, 2).dup();
+        
+        long endTime=System.currentTimeMillis();
+        
+        log.info("computeTempImage:"+(endTime-startTime)+" ms");
 
         return tempImg1;
     }
 
     INDArray resizeArray(INDArray imageCHW, Size newSizeWH) throws IOException {
+    	
+    
         Assert.isTrue(imageCHW.size(0) == 3, "Input image is expected to have the [3, W, H] dimensions");
         // Mat expects [C, H, W] dimensions
         Mat mat = loader.asMat(imageCHW);
         resize(mat, mat, newSizeWH, 0, 0, CV_INTER_AREA);
+        
         //[0, W, H, 3]
         return loader.asMatrix(mat);
+        
+       
     }
 
     FaceAnnotation[] toFaceAnnotation(INDArray totalBoxes, INDArray points) {
+    	
+    	long startTime=System.currentTimeMillis();
 
         if (totalBoxes.isEmpty()) {
             return new FaceAnnotation[0];
@@ -345,6 +381,10 @@ public class MTCNN {
             faceAnnotations[i] = faceAnnotation;
         }
 
+        long endTime=System.currentTimeMillis();
+        
+        log.info("toFaceAnnotation:"+(endTime-startTime)+" ms");
+        
         return faceAnnotations;
     }
 
